@@ -18,6 +18,5 @@ if (message.content.toLowerCase().startsWith(prefix + `disable`)) {
 
 if (message.content.toLowerCase().startsWith(prefix + `info`)) {
     message.channel.send(`Hi, i am a anti-virus bot that made by oold. I am going to extinct the virus if i see them!`);
-
-
+    
 bot.login(token);
