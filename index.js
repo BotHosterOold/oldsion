@@ -17,6 +17,12 @@ bot.on('message', msg=>{
 })
 
 bot.on('message', msg=>{
+    if(msg.content ===  "What is absolute poverty?"){
+		msg.reply('People absense of 2 of the 7 basic needs (santitation facilities,safe drinking water , acess to service,shield , food and education');
+	}
+})
+
+bot.on('message', msg=>{
     if(msg.content ===  "?update"){
 		msg.reply('Updated');
 	}
