@@ -17,8 +17,14 @@ bot.on('message', msg=>{
 })
 
 bot.on('message', msg=>{
+    if(msg.content ===  "?update"){
+		msg.reply('Updated');
+	}
+})
+
+bot.on('message', msg=>{
     if(msg.content ===  "Who does benja loves?"){
-		msg.reply('Ally man');
+		msg.reply(Thanos');
 	}
 })
 
