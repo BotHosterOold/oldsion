@@ -10,6 +10,12 @@ bot.on('ready', () =>{
     console.log('Bot已經Online了喲！')
 })
 
+bot.on('message', msg=>{
+    if(msg.content ===  "Hey oldsion"){
+		msg.reply('Sir, what can i help you?');
+	}
+})
+
 function clean(text) {
     if (typeof(text) === "string")
       return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
