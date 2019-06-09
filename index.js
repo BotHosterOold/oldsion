@@ -34,7 +34,7 @@ if (message.content.toLowerCase().startsWith(prefix + `disable`)) {
     .setTitle(`I am Oldsion`)
     .setColor(0xCF40FA)
     .setDescription(`Hi, i am a anti-virus bot that made by oold. I am going to extinct the virus if i see them!`)
-    .addField(`Have a good day)
+    .addField(`Have a good day`)
     message.channel.send({ embed: embed });
   } 
     
