@@ -17,7 +17,6 @@ function clean(text) {
         return text;
 }
 
-
 bot.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
