@@ -10,7 +10,10 @@ bot.on('ready', () =>{
     console.log('Bot已經Online了喲！')
 })
 
-if (message.content.toLowerCase().startsWith(prefix + `help`)) {
+bot.on("message", (message) => {
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+  if (message.content.toLowerCase().startsWith(prefix + `help`)) {
     const embed = new Discord.RichEmbed()
     .setTitle(`:mailbox_with_mail: Vulnix Help`)
     .setColor(0xCF40FA)
@@ -19,5 +22,6 @@ if (message.content.toLowerCase().startsWith(prefix + `help`)) {
     .addField(`Other`, `[${prefix}help]() > Shows you this help menu your reading\n[${prefix}ping]() > Pings the bot to see how long it takes to react\n[${prefix}about]() > Tells you all about Vulnix`)
     message.channel.send({ embed: embed });
   }
+
     
 bot.login(token);
