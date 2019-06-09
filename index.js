@@ -25,8 +25,8 @@ bot.on("message", (message) => {
     .setTitle(`Oldsion Help`)
     .setColor(0xCF40FA)
     .setDescription(`I am Oldsion , i am code by oold to extinct the virus`)
-    .addField(`?enable \n Enable Oldsion`)
-    .addField(`?disable \n Disable Oldsion`)
+    .addField(`?enable > Enable Oldsion`)
+    .addField(`?disable > Disable Oldsion`)
     message.channel.send({ embed: embed });
   }
 
