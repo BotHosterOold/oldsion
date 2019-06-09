@@ -16,6 +16,18 @@ bot.on('message', msg=>{
 	}
 })
 
+bot.on('message', msg=>{
+    if(msg.content ===  "Who does benja loves?"){
+		msg.reply('Ally man');
+	}
+})
+
+bot.on('message', msg=>{
+    if(msg.content ===  "Who does oold loves?"){
+		msg.reply('I won't tell you that');
+	}
+})
+
 function clean(text) {
     if (typeof(text) === "string")
       return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
