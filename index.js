@@ -17,9 +17,6 @@ function clean(text) {
         return text;
 }
 
-var prefix = "v";
-var token = " ";
-
 
 bot.on("message", (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
